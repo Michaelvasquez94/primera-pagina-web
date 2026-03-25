@@ -8,10 +8,8 @@
 <body>
     
     
-    <!-- SECCION: HEADER (Encabezado Semantico) [2]-->
     <header>
         <h1>Fast Delivery</h1>
-        <!-- Barra de navegacion solicitada [2]-->
         <nav>
             <ul>
                 <li><a href="#rastreo">Rastrear envio</a></li>
@@ -22,8 +20,10 @@
         </ul>
         </nav>
     </header>
-<!-- 1. Sección de Rastro con Formulario -->
-<sectio id="rastreo">
+
+    <main>
+
+<section id="rastreo">
     <h2>Rastrea tu paquete</h2>
     <p>Ingresa el número de guia para conocer el estado de tu envío en tiempo real.</p>
     <from>
@@ -51,8 +51,95 @@
     <h3>video promocional</h3>
     <iframe width="200" height="200"
     src="https://www.youtube.com/embed/diIOpkc3DvY" title="EXPERIENCIAS DE POLICÍAS ESTATALES | HISTORIAS DE TERROR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>"> 
+    </iframe>
 </section>
+
+<hr>
+
+<section id="=tarifas">
+    <h2>Tarifas de envio 2026</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Peso del paquete</th>
+                <th>Costo Local</th>
+                <th>Costo Nacional</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0kg - 5kg</td>
+                <td>$3.ooo</td>
+                <td>$6.000</td>
+            </tr>
+            <tr>
+                <td>5kg - 10kg</td>
+                <td>$6.000</td>
+                <td>$12.000</td>
+            </tr>
+            <tr>
+                <td>Más de 10kg</td>
+                <td>$10.000</td>
+                <td>$25.000</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<section id="acceso">
+    <h2>Area de Clientes</h2>
+    <h3>Iniciar Sesión</h3>
+    <form action="/login" method="post">
+        <label>Correo Electronico:</label><br>
+        <input type="email" name="user_email" required><br>
+        <label>contraseña:</label><br>
+        <input type="password" name="user_password" required><br>
+        <button type="submit">Entrar</button>
+    </form>
+
+
+    <h3>Registro de Nuevo Usuario</h3>
+    <form action="/registro" method="post">
+        <label>Nombre completo:</label><br>
+        <input type="text" name="full_name"><br>
+        <label>Correo Electronico:</label><br>
+        <input type="email" name="reg_email"><br>
+        <label>Crear Contraseña:</label><br>
+        <input type="password" name="reg_password">
+        <button type="submit">Registrarse</button><br>
+    </form>
+
+    <h3>¿Olvidaste tu contraseña?</h3>
+    <form acction="/recuperar" method="post">
+        <p>Ingresa tu correo para enviarte un enlace de recuperacion:</p>
+        <input type="email" placeholder="tu@email.com">
+        <button type="submit">Enviar Enlace</button>
+    </form>
+</section>
+
+<hr>
+
+<section id="contacto">
+    <h2>contactenos</h2>
+    <form>
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre_contacto"><br>
+        <label>Asunto:</label><br>
+        <input type="text" name="asunto_contacto"><br>
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje" rows="5" cols="30"></textarea><br>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p><strong>Fast Delivery S.A.</strong></p>
+    <P>&COPY; 2026 Todos los derechos reservados</P>
+</footer>
 
 </body>
 </html>
